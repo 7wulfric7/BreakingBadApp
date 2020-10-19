@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 class BreakingBadViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -88,3 +88,4 @@ extension BreakingBadViewController: UITableViewDataSource, UITableViewDelegate 
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+

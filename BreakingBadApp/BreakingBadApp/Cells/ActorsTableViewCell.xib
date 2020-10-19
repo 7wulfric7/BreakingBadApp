@@ -66,11 +66,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="image" destination="kgK-mM-AJi" id="KxM-Fs-wSS"/>
                 <outlet property="lblBirthday" destination="Un2-YG-CA7" id="v7O-af-DPa"/>
                 <outlet property="lblName" destination="l4S-ar-1M4" id="7gL-8w-TEZ"/>
                 <outlet property="lblNickname" destination="pOc-lI-qcf" id="6I7-3I-Ty4"/>
                 <outlet property="lblSeasons" destination="Fae-hK-7GG" id="Rh5-9M-eHq"/>
+                <outlet property="picture" destination="kgK-mM-AJi" id="nrK-lf-8iL"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="172.76785714285714"/>
         </tableViewCell>

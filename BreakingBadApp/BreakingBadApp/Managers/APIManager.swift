@@ -5,13 +5,13 @@
 //  Created by Deniz Adil on 10/12/20.
 //
 
-import UIKit
+import Foundation
 import Alamofire
 
 class APIManager {
 static let shared = APIManager()
     init() {}
-    
+
 // Breaking Bad API   https://www.breakingbadapi.com/api/characters
     
     func getActorInfo(id: Int, completion: @escaping (_ brBaInfo: BreakingBadInfo?,_ error: Error?) -> Void) {
@@ -28,3 +28,4 @@ static let shared = APIManager()
         }
     }
 }
+
