@@ -19,25 +19,17 @@ class ActorsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-    func setActorInfo(actors: BreakingBadInfo) {
+    
+    func getActorInfo(actors: BrBad) {
         self.lblName.text = actors.name
-        self.lblBirthday.text = actors.birthday
         self.lblNickname.text = actors.nickname
-//        self.lblSeasons.text = "\(actors.appearance!)"
-//            if let imgName = actors.img {
-//                let imgUrl = BASE_IMG_URL + imgName + "@2x.png"
-//                self.picture.kf.setImage(with: URL(string: imgUrl))
-//            }
-        }
+        self.lblBirthday.text = actors.bithday
+        self.lblSeasons.text = "\(actors.appearance!)"
     }
- 
+}
+

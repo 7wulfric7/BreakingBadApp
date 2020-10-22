@@ -5,27 +5,23 @@
 //  Created by Deniz Adil on 10/12/20.
 //
 
-import Foundation
+import UIKit
 import Alamofire
 
 class APIManager {
-static let shared = APIManager()
-    init() {}
-
-// Breaking Bad API   https://www.breakingbadapi.com/api/characters
-    
-    func getActorInfo(completion: @escaping (_ brBaInfo: [BreakingBadInfo]?,_ error: Error?) -> Void) {
+    static let shared = APIManager()
+        init() {}
+   
+    func getActors(completion: @escaping (_ actors: [BrBad]?, _ error: Error?) -> Void) {
         let url = BASE_URL
-        AF.request(url).responseDecodable(of: [BreakingBadInfo].self) { response in
+        AF.request(url).responseDecodable(of: [BrBad].self) { response in
             if let error = response.error {
-                print(error.localizedDescription)
+                debugPrint(response)
                 completion(nil, error)
-                return
             }
-            if let brBaInfo = response.value {
-                completion(brBaInfo, nil)
+            if let actors = response.value {
+                completion(actors, nil)
             }
         }
     }
 }
-

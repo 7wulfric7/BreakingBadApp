@@ -16,7 +16,6 @@
 		226431B62534785D009B7D34 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226431B52534785D009B7D34 /* APIManager.swift */; };
 		226431BA253478EB009B7D34 /* ActorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226431B8253478EB009B7D34 /* ActorsTableViewCell.swift */; };
 		226431BB253478EB009B7D34 /* ActorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226431B9253478EB009B7D34 /* ActorsTableViewCell.xib */; };
-		226431BE25347EC9009B7D34 /* ActorsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226431BD25347EC9009B7D34 /* ActorsInfo.swift */; };
 		226431C125347F1D009B7D34 /* BreakingBadInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226431C025347F1D009B7D34 /* BreakingBadInfo.swift */; };
 		226431C42534ADEB009B7D34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226431C32534ADEB009B7D34 /* Constants.swift */; };
 		641F55EF5CF790B8D3BABA20 /* Pods_BreakingBadApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4C51CD28B499BF695F980E /* Pods_BreakingBadApp.framework */; };
@@ -34,7 +33,6 @@
 		226431B52534785D009B7D34 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		226431B8253478EB009B7D34 /* ActorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsTableViewCell.swift; sourceTree = "<group>"; };
 		226431B9253478EB009B7D34 /* ActorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorsTableViewCell.xib; sourceTree = "<group>"; };
-		226431BD25347EC9009B7D34 /* ActorsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsInfo.swift; sourceTree = "<group>"; };
 		226431C025347F1D009B7D34 /* BreakingBadInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadInfo.swift; sourceTree = "<group>"; };
 		226431C32534ADEB009B7D34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50D6C1EBF44DABCE6A44E395 /* Pods-BreakingBadApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadApp.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadApp/Pods-BreakingBadApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 		226431AF25347793009B7D34 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				226431BD25347EC9009B7D34 /* ActorsInfo.swift */,
 				226431C025347F1D009B7D34 /* BreakingBadInfo.swift */,
 			);
 			path = Models;
@@ -260,7 +257,6 @@
 				226431BA253478EB009B7D34 /* ActorsTableViewCell.swift in Sources */,
 				226431B62534785D009B7D34 /* APIManager.swift in Sources */,
 				2264319725346E5F009B7D34 /* AppDelegate.swift in Sources */,
-				226431BE25347EC9009B7D34 /* ActorsInfo.swift in Sources */,
 				226431B32534780C009B7D34 /* BreakingBadViewController.swift in Sources */,
 				2264319925346E5F009B7D34 /* SceneDelegate.swift in Sources */,
 				226431C42534ADEB009B7D34 /* Constants.swift in Sources */,
