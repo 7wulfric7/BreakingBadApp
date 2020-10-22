@@ -1260,15 +1260,15 @@ import UIKit
 //]
 
 struct BreakingBadInfo: Decodable {
-    var id: Int
-    var name: String
-    var nickname: String
-    var birthday: String
-    var img: String?
+//    var id: Int
+    var name: String = ""
+    var nickname: String = ""
+    var birthday: String = ""
+    var img: String? = ""
     var appearance: [Appearance]?
     
     private enum CodingKeys: String, CodingKey {
-        case id = "char_id"
+//        case id = "char_id"
         case name
         case nickname
         case birthday

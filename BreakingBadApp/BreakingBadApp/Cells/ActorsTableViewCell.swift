@@ -15,9 +15,13 @@ class ActorsTableViewCell: UITableViewCell {
     @IBOutlet weak var lblSeasons: UILabel!
     @IBOutlet weak var lblBirthday: UILabel!
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -25,18 +29,15 @@ class ActorsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func setActorInfo(actors: ActorsInfo) {
+    func setActorInfo(actors: BreakingBadInfo) {
         self.lblName.text = actors.name
-        APIManager.shared.getActorInfo(id: actors.id) { (brBaInfo, error) in
-            if let brBaInfo = brBaInfo {
-                self.lblBirthday.text = brBaInfo.birthday
-                self.lblNickname.text = brBaInfo.nickname
-                self.lblSeasons.text = "\(brBaInfo.appearance!.description)"
-                if let imgName = brBaInfo.img {
-                    let imgUrl = BASE_IMG_URL + imgName + "@2x.png"
-                    self.picture.kf.setImage(with: URL(string: imgUrl))
-                }
-            }
+        self.lblBirthday.text = actors.birthday
+        self.lblNickname.text = actors.nickname
+//        self.lblSeasons.text = "\(actors.appearance!)"
+//            if let imgName = actors.img {
+//                let imgUrl = BASE_IMG_URL + imgName + "@2x.png"
+//                self.picture.kf.setImage(with: URL(string: imgUrl))
+//            }
         }
     }
-}
+ 

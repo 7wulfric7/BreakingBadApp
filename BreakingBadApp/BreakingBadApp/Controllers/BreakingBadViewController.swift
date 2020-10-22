@@ -13,16 +13,27 @@ class BreakingBadViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var actors = [ActorsInfo]()
-    var filteredActors = [ActorsInfo]()
+    var actors = [BreakingBadInfo]()
+    var filteredActors = [BreakingBadInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-title = "Breaking Bad Actors"
-        searchBar.delegate = self
+
         setupTable()
-//        getActors()
         registerForKeyboardNotificaitons()
+        searchBar.delegate = self
+        
+        APIManager.shared.getActorInfo { (brBaInfo, error) in
+            if let actors = brBaInfo {
+                self.actors = actors
+                self.tableView.reloadData()
+            }
+            print("vrakja nesto")
+        }
+        
+        
+//        getActors()
+        
         // Do any additional setup after loading the view.
     }
     func registerForKeyboardNotificaitons() {

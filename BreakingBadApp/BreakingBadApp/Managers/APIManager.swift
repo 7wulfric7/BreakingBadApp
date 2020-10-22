@@ -14,9 +14,9 @@ static let shared = APIManager()
 
 // Breaking Bad API   https://www.breakingbadapi.com/api/characters
     
-    func getActorInfo(id: Int, completion: @escaping (_ brBaInfo: BreakingBadInfo?,_ error: Error?) -> Void) {
+    func getActorInfo(completion: @escaping (_ brBaInfo: [BreakingBadInfo]?,_ error: Error?) -> Void) {
         let url = BASE_URL
-        AF.request(url).responseDecodable(of: BreakingBadInfo.self) { response in
+        AF.request(url).responseDecodable(of: [BreakingBadInfo].self) { response in
             if let error = response.error {
                 print(error.localizedDescription)
                 completion(nil, error)
